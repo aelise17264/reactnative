@@ -1,15 +1,17 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+  
   return (
     <View>
       <Text style={styles.text}>It's Summer</Text> 
       <Button 
         title="Go to Components Demo"
-        onPress={() => console.log('Button pressed')}
+        onPress={() => props.navigation.navigate('Components')}
+        //Native will create a Back button automatically to take the user back home
         />
-      <TouchableOpacity onPress={() => console.log('List Pressed')}>
+      <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List Demo</Text> 
         {/* can put as many blocks of text inside a TouchableOpacity */}
       </TouchableOpacity>
