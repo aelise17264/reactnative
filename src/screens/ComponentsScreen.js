@@ -7,7 +7,7 @@ export default ComponentsScreen = () => {
 
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 30
+        fontSize: 30,
     }
 
 })
