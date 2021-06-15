@@ -1,20 +1,25 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = (props) => {
+const HomeScreen = ({navigation}) => {
   
   return (
     <View>
       <Text style={styles.text}>It's Summer</Text> 
       <Button 
+        style={styles.button}
         title="Go to Components Demo"
-        onPress={() => props.navigation.navigate('Components')}
+        onPress={() => navigation.navigate('Components')}
         //Native will create a Back button automatically to take the user back home
         />
-      <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
+      <Button
+      style={styles.button}
+      title="Go to List Demo"
+      onPress={() => navigation.navigate('List')}
+      />  
+      {/* <TouchableOpacity onPress={() => navigation.navigate('List')}>
         <Text>Go to List Demo</Text> 
-        {/* can put as many blocks of text inside a TouchableOpacity */}
-      </TouchableOpacity>
+        </TouchableOpacity> */}
     </View>
   )
 };
@@ -22,6 +27,9 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
+  },
+  button: {
+    marginBottom: 5
   }
 });
 
