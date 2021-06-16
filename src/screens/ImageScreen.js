@@ -5,9 +5,10 @@ import ImageDetail from './components/ImageDetail';
 export default ImageScreen = () => {
     return (
     <View>
-        <ImageDetail />
-        <ImageDetail />
-        <ImageDetail />
+        <ImageDetail title="Forest"/>
+        <ImageDetail title="Beach"/>
+        <ImageDetail title="Mountain"/>
+        {/* creates separate copies of this component */}
     </View>
 )
 };
