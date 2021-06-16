@@ -4,8 +4,9 @@ import { Text, StyleSheet, View, Image } from 'react-native';
 export default ImageDetail = (props) => {
     return(
         <View>
-        <Image source={require('../../assets/beach.jpg')} />
-        <Text>{props.title}</Text>
+            <Image source={props.imageSource} />
+            <Text>{props.title}</Text>
+            <Text>Image Score - {props.score}</Text>
         </View>
     )
 
