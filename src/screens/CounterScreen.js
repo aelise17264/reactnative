@@ -16,6 +16,7 @@ export default CounterScreen = () => {
             setCounter(counter - 1)
         }}
         />
+        <Text>Current Count: {counter}</Text>
     </View>
 )
 };
