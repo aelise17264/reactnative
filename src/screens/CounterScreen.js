@@ -19,11 +19,11 @@ export default CounterScreen = () => {
         <View>
             <Text>This is the counter screen</Text>
            <Button title="+" onPress={() =>{
-            dispatch({type: 'increment', paylod: 1})
+            dispatch({type: 'increment', payload: 1})
         }}
          />
         <Button title="-" onPress={() => {
-        dispatch({type: 'decrement', paylod: 1})
+        dispatch({type: 'decrement', payload: 1})
 
         }}
         />
