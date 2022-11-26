@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, View, Button, FlatList } from 'react-native';
 
-export default ColorScreen = () => {
+export default function ColorScreen () {
     const [colors, setColors] = useState([]);
 
     return(
