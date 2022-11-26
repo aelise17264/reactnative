@@ -28,7 +28,7 @@ const reducer =(state, action) => {
 
 }
 
-export default SquareScreen = () => {    
+export default function SquareScreen() {    
     const [state, dispatch] = useReducer(reducer, {red: 0, green: 0, blue: 0}); 
     //setting initial state value for each color   
     const { red, green, blue} = state;

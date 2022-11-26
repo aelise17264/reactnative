@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Text, StyleSheet, View, TextInput } from 'react-native';
 
-export default TextScreen = () => {
+export default function TextScreen() {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('')
 

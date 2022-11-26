@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 
-export default ListScreen = () => {
+export default function ListScreen () {
     const friends =[
         {name: 'Candice', age: '30'},
         {name: 'Ian', age: '32'},

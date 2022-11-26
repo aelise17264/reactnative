@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import ImageDetail from './components/ImageDetail';
 
-export default ImageScreen = () => {
+export default function ImageScreen () {
     return (
     <View>
         <ImageDetail score={9} title="Forest" imageSource={require('../../assets/forest.jpg')}/>

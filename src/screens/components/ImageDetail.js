@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, Image } from 'react-native';
 
-export default ImageDetail = (props) => {
+export default function ImageDetail (props) {
     return(
         <View>
             <Image source={props.imageSource} />

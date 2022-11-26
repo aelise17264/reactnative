@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
-export default ComponentsScreen = () => {
+export default function ComponentsScreen() {
     const name = 'Anna'
     return (
         <View>

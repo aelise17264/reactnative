@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Text, StyleSheet, View, Button } from 'react-native';
 
-export default ColorCounter = ({color, onIncrease, onDecrease}) => {
+export default function ColorCounter ({color, onIncrease, onDecrease}) {
     return (
     <View>
         <Text>{color}</Text>
